@@ -1,8 +1,0 @@
-https://www.analyticsvidhya.com/blog/2015/08/comprehensive-guide-regression/
-
-Regression Defined:
-https://www.youtube.com/watch?v=l1kLCrxL9Hk
-
-Panda Dataframes:
-http://pandas.pydata.org/pandas-docs/stable/10min.html
-
