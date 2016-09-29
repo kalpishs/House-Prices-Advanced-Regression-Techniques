@@ -1,0 +1,17 @@
+Residential Homes (79features) : Predict the final price of each home.
+
+This is feature engineering.
+
+Random Forests.
+Gradient Boosting.
+XGBoost Library
+
+Submission File
+
+For each Id in the test set, you must predict the value of the SalePrice variable. The file should contain a header and have the following format:
+
+Id,SalePrice
+1461,169000.1
+1462,187724.1233
+1463,175221
+etc.
