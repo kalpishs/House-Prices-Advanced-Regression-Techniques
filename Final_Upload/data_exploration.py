@@ -1,8 +1,3 @@
-
-# coding: utf-8
-
-# In[9]:
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,18 +11,15 @@ from sklearn.cross_validation import cross_val_score
 from sklearn.metrics import make_scorer, mean_squared_error
 
 
-# In[10]:
 
 train = pd.read_csv("train.csv")
 test = pd.read_csv("test.csv")
 
 
-# In[11]:
 
 all_data = pd.concat((train.loc[:,'MSSubClass':'SaleCondition'], test.loc[:,'MSSubClass':'SaleCondition']), ignore_index=True)
 
 
-# In[12]:
 
 warnings.simplefilter('ignore', np.RankWarning)
 x = all_data.loc[np.logical_not(all_data["LotFrontage"].isnull()), "LotArea"]
@@ -37,8 +29,6 @@ t = (x <= 25000) & (y <= 150) #Extract Values
 p = np.polyfit(x[t], y[t], 1)
 all_data.loc[all_data['LotFrontage'].isnull(), 'LotFrontage'] = np.polyval(p, all_data.loc[all_data['LotFrontage'].isnull(), 'LotArea'])
 
-
-# In[13]:
 
 all_data = all_data.fillna({
     'Alley' : 'NoAlley',
@@ -85,7 +75,6 @@ all_data.loc[all_data['GarageCars'].isnull(), 'GarageCars'] = all_data.loc[all_d
 
 
 
-# In[14]:
 
 # where we have order we will use numeric
 all_data = all_data.replace({'Utilities': {'AllPub': 1, 'NoSeWa': 0, 'NoSewr': 0, 'ELO': 0},
@@ -164,9 +153,6 @@ all_data = all_data.replace({'CentralAir': {'Y': 1,
 all_data = all_data.replace({'PavedDrive': {'Y': 1, 
                                             'P': 0,
                                             'N': 0}})
-
-
-# In[ ]:
 
 
 
