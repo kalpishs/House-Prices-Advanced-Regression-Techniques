@@ -13,7 +13,7 @@ from sklearn.cross_validation import cross_val_score
 from sklearn.metrics import make_scorer, mean_squared_error
 
 from data_exploration import *
-fron new_feature_creation import *
+from new_feature_creation import *
 
 
 numeric_feats = all_data.dtypes[all_data.dtypes != "object"].index
