@@ -1,4 +1,4 @@
-#All the models are tarined in this file using XGboost,
+#All the models are tarined in this file using XGbost,
 from sklearn.linear_model import Ridge, RidgeCV, ElasticNet, LassoCV, LassoLarsCV
 from sklearn.model_selection import cross_val_score
 from operator import itemgetter
@@ -38,11 +38,7 @@ elas_preds = np.expm1(elastic.predict(X_test))
 
 lasso_preds = np.expm1(lasso_model.predict(X_test))
 final_result=0.8*lasso_preds+0.2*x_pred
-#+0.1*elas_preds
 
 solution = pd.DataFrame({"id":test.Id, "SalePrice":final_result}, columns=['id', 'SalePrice'])
 solution.to_csv("final_upload_11PM2.csv", index = False)
-
-
-# In[ ]:
 
