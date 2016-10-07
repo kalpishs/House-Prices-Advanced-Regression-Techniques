@@ -1,7 +1,6 @@
-# Houston-Data-Science
-Advanced Regression Techniques
+# House-Prices : Advanced Regression Techniques
 =========
-Sold!! How do home features add up to its price tag?? #KAGGLE COMPETITION
+Sold!! How do home features add up to its price tag??#KAGGLE COMPETITION
 
 ## Objective:
 
@@ -29,20 +28,20 @@ The potential for creative feature engineering provides a rich opportunity for f
 
 ## Scaling Features
 
-* First we have transformed the skewed numeric features(skew value is greater than 0.75) by taking log(feature + 1) - this will make the features more normal.
-* Logarithm is applied to target value as well.
-* Dummy variables for the categorical features are created.
-* The insignificant features are removed, which have many zeroes.
-* Missing values are replaced by mean whereever left.
-* The outliers id’s are identified and dropped. 
+- First we have transformed the skewed numeric features(skew value is greater than 0.75) by taking log(feature + 1) - this will make the features more normal.
+- Logarithm is applied to target value as well.
+- Dummy variables for the categorical features are created.
+- The insignificant features are removed, which have many zeroes.
+- Missing values are replaced by mean whereever left.
+- The outliers id’s are identified and dropped. 
 
 
 ## Models
 
 We have used 3 different types of models :-
-- ###Linear regression with Lasso Regularization - The idea is to try Lasso a few times on bootstrapped samples and see how stable the feature selection is. As we have mostly tuned the parameters and Lasso should perform better. So giving more weight to it .
-- ###Xgboost model to our linear model to see if we can improve the score giving weight to its prediction 
-- ###Elastic net Which is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
+- #Linear regression with Lasso Regularization - The idea is to try Lasso a few times on bootstrapped samples and see how stable the feature selection is. As we have mostly tuned the parameters and Lasso should perform better. So giving more weight to it .
+- #Xgboost model to our linear model to see if we can improve the score giving weight to its prediction 
+- #Elastic net Which is a regularized regression method that linearly combines the L1 and L2 penalties of the lasso and ridge methods.
 
 
 ## Prediction
