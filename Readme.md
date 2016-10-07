@@ -61,4 +61,4 @@ We have used 3 different types of models :-
 * scipy `>=0.18.1`
 * Xgboost `>=0.6`
 * seaborn `>=0.7.1`
-* More imports are :- itortools , operator ,
+* More imports are :- itertools , operator
