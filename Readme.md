@@ -18,7 +18,8 @@ The potential for creative feature engineering provides a rich opportunity for f
 
 ## New Feature Creation: 
 
-*The feature extraction was quite minimal taking log transformations of numeric features and replacing missing values with the mean.
+
+* The feature extraction was quite minimal taking log transformations of numeric features and replacing missing values with the mean.
 * It Didn't worked well - To improve it we added New features to it.
 * Ordered categorical featured are divided into good and poor. The idea is good quality should rise price, poor quality - reduce price.
 * Exterior1st, Exterior2nd, RoofMatl, Condition1, Condition2, BldgType are converted to price brackets using SVM.
